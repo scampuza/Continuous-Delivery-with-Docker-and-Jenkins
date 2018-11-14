@@ -1,7 +1,7 @@
 version: "2"
 services:
   calculator:
-    image: leszko/calculator:latest
+    image: santiagocv/calculator:latest
     ports:
       - 8080
   redis:

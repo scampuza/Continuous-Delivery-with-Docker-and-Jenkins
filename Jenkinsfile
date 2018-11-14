@@ -74,7 +74,7 @@ pipeline {
 
     stage("Acceptance test") {
       steps {
-	sh "./acceptance_test.sh 192.168.0.166"
+	sh "./acceptance_test.sh 52.55.159.138"
       }
     }
 	  
@@ -89,7 +89,7 @@ pipeline {
 
     stage("Smoke test") {
       steps {
-	sh "./smoke_test.sh 192.168.0.115"
+	sh "./smoke_test.sh 35.175.149.37"
       }
     }
   }

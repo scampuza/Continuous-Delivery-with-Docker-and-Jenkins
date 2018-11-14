@@ -38,7 +38,7 @@
       dest: ./docker-compose.yml
   - name: run docker-compose
     environment:
-      BUILD_TIMESTAMP: "{{ lookup('env', 'BUILD_TIMESTAMP') }}"
+      BUILD_ID: "{{ lookup('env', 'BUILD_ID') }}"
     docker_service:
       project_src: .
       state: present
