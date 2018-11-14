@@ -62,6 +62,7 @@ pipeline {
     stage("Docker push") {
       steps {
         sh "docker push santiagocv/calculator:${BUILD_ID}"
+        sh "docker push santiagocv/calculator:latest"
       }
     }
 
