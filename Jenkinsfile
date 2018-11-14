@@ -46,7 +46,7 @@ pipeline {
 
     stage("Docker build") {
       steps {
-        sh "docker build -t santiagocv/calculator:${BUILD_TIMESTAMP} ."
+        sh "docker build -t santiagocv/calculator:${BUILD_ID} ."
       }
     }
 
@@ -61,7 +61,7 @@ pipeline {
 
     stage("Docker push") {
       steps {
-        sh "docker push santiagocv/calculator:${BUILD_TIMESTAMP}"
+        sh "docker push santiagocv/calculator:${BUILD_ID}"
       }
     }
 
